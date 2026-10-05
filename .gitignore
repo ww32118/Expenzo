@@ -1,0 +1,51 @@
+# ═══════════════════════════════════════════════════
+# Expenzo — Monorepo .gitignore
+# ═══════════════════════════════════════════════════
+
+# ─── IDE ───────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# ─── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Backend (Java / Spring Boot) ──────────────────
+backend/target/
+backend/*.class
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/HELP.md
+
+# ─── Frontend (Node / Vite) ────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/*.local
+frontend/coverage/
+
+# ─── Secrets (CRITICAL) ────────────────────────────
+**/application-local.properties
+**/.env
+**/.env.local
+**/.env.*.local
+**/*.secret
+
+# ─── Logs ──────────────────────────────────────────
+*.log
+logs/
+**/logs/
+
+# ─── Build artifacts ───────────────────────────────
+*.jar
+*.war
+*.ear
+!backend/.mvn/wrapper/maven-wrapper.jar
